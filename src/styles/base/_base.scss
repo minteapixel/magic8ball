@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+  background-color: $blue;
+	color: $dark-grey;
+	font-family: 'DM Sans', Arial, sans-serif;
+	font-size: $m-size;
+	font-weight: 500;
+	line-height: 1.6;
+}

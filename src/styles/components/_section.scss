@@ -1,0 +1,14 @@
+.section {
+  color: $dark-blue;
+  font-weight: 400;
+  margin: 1.6rem 0;
+  text-align: center;
+
+  @media (max-width: $desktop-breakpoint) {
+    padding: 0 $l-size;
+  }
+}
+
+.section--hidden {
+  display: none;
+}

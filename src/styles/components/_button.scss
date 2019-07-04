@@ -1,0 +1,13 @@
+button {
+	cursor: pointer;
+}
+
+.button__ask {
+  border: none;
+  border-radius: 0.6rem;
+  background-color: $dark-grey;
+  color: $off-white;
+  font-weight: 700;
+  font-size: $m-size;
+  padding: $s-size;
+}

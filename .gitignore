@@ -1,0 +1,9 @@
+# Development
+.DS_Store
+.git
+node_modules/
+
+# Misc
+answers.md
+blogpost.md
+to-do.md

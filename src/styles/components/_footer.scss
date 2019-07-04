@@ -1,0 +1,18 @@
+.footer {
+  background: $dark-blue;
+  color: $off-white;
+  flex-shrink: 0;
+  font-size: $s-size;
+  padding: $m-size;
+  text-align: center;
+  width: 100vw;
+}
+
+.footer a {
+  color: $blue;
+  font-weight: 700;
+}
+
+.footer a:hover {
+  cursor: pointer;
+}
