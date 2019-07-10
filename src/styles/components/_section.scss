@@ -12,3 +12,8 @@
 .section--hidden {
   display: none;
 }
+
+.section__title {
+  font-size: $m-size;
+  font-weight: 700;
+}

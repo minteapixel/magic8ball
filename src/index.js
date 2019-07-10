@@ -1,7 +1,5 @@
 import './styles/styles.scss';
 
-console.log("javascript has been connected! hello world!");
-
 // VARIABLES ==========
 let answer = document.getElementById("answer");
 let btn__askBall = document.getElementById("btn__askBall");
@@ -25,7 +23,7 @@ const askBallFunc = () => {
   insertAnswer(randomAnswer(answerArray));
   btn__askBall.innerText="Ask again?";
   beforeAnswer.classList.remove("section--hidden");
-  return console.log("answer: ", answerMsg)
+  return console.log("answer: ", answerMsg);
 }
 
 btn__askBall.addEventListener("click", askBallFunc);
