@@ -19,6 +19,7 @@ module.exports = (env) => {
       path: path.resolve(__dirname, 'public'),
       // path: path.resolve(__dirname, 'dist'),
       filename: '[name].[chunkhash].js'
+      //filename: '[name].[chunkhash].js'
     },
     module: {
       rules: [{
@@ -50,7 +51,8 @@ module.exports = (env) => {
     ],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
     devServer: {
-      contentBase: path.resolve(__dirname, 'dist'),
+      contentBase: path.resolve(__dirname, 'public'),
+      //contentBase: path.resolve(__dirname, 'dist').
       watchContentBase: true
     }
   }
