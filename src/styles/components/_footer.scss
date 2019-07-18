@@ -6,6 +6,9 @@
   padding: $m-size;
   text-align: center;
   width: 100vw;
+  @media (max-width: $desktop-breakpoint) {
+    margin-top: $m-size;
+  }
 }
 
 .footer a {

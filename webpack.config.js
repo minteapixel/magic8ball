@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = (env) => {
   const isProduction = env == 'production';
   const CSSExtract = new MiniCssExtractPlugin ({ 
-    filename: 'style.[contenthash].css'});
+    filename: 'styles.css'});
   const HTMLWebpackPlugin = new HtmlWebpackPlugin({
     inject: false,
     hash: true,
@@ -18,7 +18,7 @@ module.exports = (env) => {
     output: {
       path: path.resolve(__dirname, 'public'),
       // path: path.resolve(__dirname, 'dist'),
-      filename: '[name].[chunkhash].js'
+      filename: 'main.js'
       //filename: '[name].[chunkhash].js'
     },
     module: {
@@ -52,7 +52,6 @@ module.exports = (env) => {
     devtool: isProduction ? 'source-map' : 'inline-source-map',
     devServer: {
       contentBase: path.resolve(__dirname, 'public'),
-      //contentBase: path.resolve(__dirname, 'dist').
       watchContentBase: true
     }
   }

@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Magic 8 Ball - Eileen L</title>
-    <link rel="stylesheet" type="text/css" href="<%=htmlWebpackPlugin.files.chunks.main.css %>"  />
+    <link rel="stylesheet" type="text/css" href="styles.css"  />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet"> 
   </head>
   <body>
@@ -16,7 +17,7 @@
             <p>Answering <strong>tough</strong> questions with a <span class="underline"><em>simple</em></span> shake</hp>
           </div>
           <div class="section">
-            <img class="ball" src="/images/magic8ball-2.svg" />
+            <img id="ballImage" class="ball" src="images/magic8ball-2.svg" />
           </div>
           <div class="section">
             <button id="btn__askBall" class="button__ask">Shake!</button>
@@ -29,9 +30,9 @@
           </div>
       </div>
       <footer class="footer">
-        <p>Designed and coded by <a href="https://github.com/minteapixel/">Eileen L</a>. See the source code <a href="https://google.com">here</a>.</p>
+        <p>Designed and coded by <a href="https://github.com/minteapixel/">Eileen L</a>. See the source code <a href="https://github.com/minteapixel/magic8ball">here</a>.</p>
       </footer>
     </div>
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script src="main.js"></script>
   </body>
 </html>
